@@ -1,0 +1,7 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name, label: 'Name', placeholder: 'The restaurants name please', error: 'Name is mandatory, please specify one'%>
+  <%= f.select :category, Restaurant::CATEGORY, label: 'Select a Category' %>
+  <%= f.input :address, label: 'Address', placeholder: 'The restaurants address please', error: 'Name is mandatory, please specify one' %>
+  <%= f.input :phone_number, label: 'Phone number', placeholder: 'The restaurants phone number please', error: 'Name is mandatory, please specify one' %>
+  <%= f.button :submit %>
+<% end %>
